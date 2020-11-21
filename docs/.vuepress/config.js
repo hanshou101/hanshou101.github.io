@@ -31,7 +31,56 @@ const baseCfg = {
 
 const themeCfg = {
   // theme: undefined,                                           // 使用自定义主题的时候，需要指定它
-  // themeConfig: {},                                            // 为当前的主题提供一些配置
+  themeConfig: {                                                 // 为当前的主题提供一些配置
+    /*
+    locales: {
+      '/'   : {
+        selectText   : 'Languages',
+        label        : 'English',
+        ariaLabel    : 'Languages',
+        editLinkText : 'Edit this page on GitHub',
+        serviceWorker: {
+          updatePopup: {
+            message   : 'New content is available.',
+            buttonText: 'Refresh'
+          }
+        },
+        algolia      : {},
+        nav          : [
+          {text: 'Nested', link: '/nested/', ariaLabel: 'Nested'}
+        ],
+        sidebar      : {
+          '/'       : [/!* ... *!/],
+          '/nested/': [/!* ... *!/]
+        }
+      },
+      '/zh/': {
+        // 多语言下拉菜单的标题
+        selectText   : '选择语言',
+        // 该语言在下拉菜单中的标签
+        label        : '简体中文',
+        // 编辑链接文字
+        editLinkText : '在 GitHub 上编辑此页',
+        // Service Worker 的配置
+        serviceWorker: {
+          updatePopup: {
+            message   : '发现新内容可用.',
+            buttonText: '刷新'
+          }
+        },
+        // 当前 locale 的 algolia docsearch 选项
+        algolia      : {},
+        nav          : [
+          {text: '嵌套', link: '/zh/nested/'}
+        ],
+        sidebar      : {
+          '/zh/'       : [/!* ... *!/],
+          '/zh/nested/': [/!* ... *!/]
+        }
+      }
+    },
+    */
+  },
 };
 
 const plugCfg = {
@@ -40,7 +89,7 @@ const plugCfg = {
 
 const mdCfg = {
   markdown: {
-    // lineNumbers: undefined,                                   // 是否在每个代码块的左侧显示行号
+    lineNumbers: true /* undefined */,                                   // 是否在每个代码块的左侧显示行号
     // slugify: 已有源码方法,                                      // 一个将标题文本转换为 slug 的函数 （？？？？？？）
     // anchor: { permalink: true, permalinkBefore: true, permalinkSymbol: '#' },                  // markdown-it-anchor (opens new window)的选项 （？？？？？？）
     // pageSuffix: '.html',                                      // 自定义内部链接，以兼容 使用【vuepress-plugin-clean-urls】的情况
@@ -97,6 +146,24 @@ const compatibleCfg = {
   // evergreen: false,
 };
 
+const localeCfg = {
+  locales: {
+    /*
+    // 键名是该语言所属的子路径
+    // 作为特例，默认语言可以使用 '/' 作为其路径。
+    '/'   : {
+      lang       : 'en-US', // 将会被设置为 <html> 的 lang 属性
+      title      : 'VuePress',
+      description: 'Vue-powered Static Site Generator'
+    },
+    '/zh/': {
+      lang       : 'zh-CN',
+      title      : 'VuePress',
+      description: 'Vue 驱动的静态网站生成器'
+    },
+    */
+  }
+};
 
 /**
  * 1.参考资料：
@@ -117,5 +184,7 @@ module.exports = {
   ...buildCfg,
   // 兼容性配置
   ...compatibleCfg,
+  // 多语言配置
+  ...localeCfg,
 };
 
