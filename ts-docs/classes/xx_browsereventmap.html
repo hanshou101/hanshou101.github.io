@@ -1,0 +1,1893 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>xX_BrowserEventMap | use-on-demand</title>
+	<meta name="description" content="Documentation for use-on-demand">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">use-on-demand</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="xx_browsereventmap.html">xX_BrowserEventMap</a>
+				</li>
+			</ul>
+			<h1>Class xX_BrowserEventMap</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">xX_BrowserEventMap</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="xx_browsereventmap.html#keyboard" class="tsd-kind-icon">KEYBOARD</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Object literals</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-object-literal tsd-parent-kind-class tsd-is-static"><a href="xx_browsereventmap.html#clipboard" class="tsd-kind-icon">Clip<wbr>Board</a></li>
+								<li class="tsd-kind-object-literal tsd-parent-kind-class tsd-is-static"><a href="xx_browsereventmap.html#dragdom" class="tsd-kind-icon">Drag<wbr>Dom</a></li>
+								<li class="tsd-kind-object-literal tsd-parent-kind-class tsd-is-static"><a href="xx_browsereventmap.html#mouse" class="tsd-kind-icon">MOUSE</a></li>
+								<li class="tsd-kind-object-literal tsd-parent-kind-class tsd-is-static"><a href="xx_browsereventmap.html#touch" class="tsd-kind-icon">Touch</a></li>
+								<li class="tsd-kind-object-literal tsd-parent-kind-class tsd-is-static"><a href="xx_browsereventmap.html#window" class="tsd-kind-icon">Window</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="keyboard" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> KEYBOARD</h3>
+					<div class="tsd-signature tsd-kind-icon">KEYBOARD<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>keydown<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"keydown"</span><span class="tsd-signature-symbol">; </span>keypress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"keypress"</span><span class="tsd-signature-symbol">; </span>keyup<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"keyup"</span><span class="tsd-signature-symbol">; </span>getKeyCode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>KeyCode_MAP<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = {// TODO 键盘事件，通通用  event.keyCode 去取就好。// 单次键盘【完整输入周期】：包括按下、长按和弹起。keypress: &#x27;keypress&#x27;,keydown: &#x27;keydown&#x27;,     // 键盘按键被按下的瞬间keyup  : &#x27;keyup&#x27;,         // 键盘按键被弹起的瞬间/*** 参考资料：*          键盘按钮keyCode大全，keyCode列表对照表 - 如果声音记得 - 博客园 - https://www.cnblogs.com/jf-guo/p/5235136.html*/KeyCode_MAP: {// 左边大键盘区，数字0: 48, 1: 49, 2: 50, 3: 51, 4: 52, 5: 53, 6: 54, 7: 55, 8: 56, 9: 57,// 左边大键盘区，字母A: 65, B: 66, C: 67, D: 68, E: 69, F: 70, G: 71,H: 72, I: 73, J: 74, K: 75, L: 76, M: 77, N: 78,O: 79, P: 80, Q: 81, R: 82, S: 83, T: 84,U: 85, V: 86, W: 87, X: 88, Y: 89, Z: 90,// TODO 切记，以上的【数字、字母】输入键，可以通过  keypress、keydown 键监听。// TODO 以下的【非印刷键】，非常非常建议  通过 keydown，来进行监听！！！// 参考资料：JavaScript listener, &quot;keypress&quot; doesn&#x27;t detect backspace? - Stack Overflow - https://stackoverflow.com/a/4843502/6264260// 上方，功能键F1        : 112, F2: 113, F3: 114, F4: 115, F5: 116, F6: 117,F7        : 118, F8: 119, F9: 120, F10: 121, F11: 122, F12: 123,// 特殊控制键BackSpace : 8, Tab: 9,Enter     : 13, Caps_Lock: 20,Control   : 17, Shift: 16, Alt: 18,Left_Arrow: 37, Up_Arrow: 38, Right_Arrow: 39, Down_Arrow: 40,Insert    : 45,Delete    : 46,Num_Lock  : 144,},/*** 参考资料：*          浅谈JavaScript中按键事件的e.keyCode || e.which || e.charCode - 筱葭的博客 - CSDN博客 - https://blog.csdn.net/zhouziyu2011/article/details/53978293*/getKeyCode(__e: Event) {const e &#x3D; (__e || window.event) as KeyboardEvent;		// 此处，做出IE兼容。return e.keyCode || e.which || e.charCode;},} as const</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L272">sources/dom/dom-events.ts:272</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>keydown<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"keydown"</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>keypress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"keypress"</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>keyup<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"keyup"</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>get<wbr>Key<wbr>Code<span class="tsd-signature-symbol">: </span>function</h5>
+								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-type-literal">
+									<li class="tsd-signature tsd-kind-icon">get<wbr>Key<wbr>Code<span class="tsd-signature-symbol">(</span>__e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L317">sources/dom/dom-events.ts:317</a></li>
+											</ul>
+										</aside>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>参考资料：
+												浅谈JavaScript中按键事件的e.keyCode || e.which || e.charCode - 筱葭的博客 - CSDN博客 - <a href="https://blog.csdn.net/zhouziyu2011/article/details/53978293">https://blog.csdn.net/zhouziyu2011/article/details/53978293</a></p>
+											</div>
+										</div>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>__e: <span class="tsd-signature-type">Event</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>Key<wbr>Code_<wbr>MAP<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>参考资料：
+										键盘按钮keyCode大全，keyCode列表对照表 - 如果声音记得 - 博客园 - <a href="https://www.cnblogs.com/jf-guo/p/5235136.html">https://www.cnblogs.com/jf-guo/p/5235136.html</a></p>
+									</div>
+								</div>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>0<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">48</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">49</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">50</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">51</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">52</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">53</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">54</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>7<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">55</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>8<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">56</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>9<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">57</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>A<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">65</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Alt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">18</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>B<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">66</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Back<wbr>Space<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">8</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>C<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">67</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Caps_<wbr><wbr>Lock<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">20</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Control<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">17</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>D<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">68</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Delete<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">46</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Down_<wbr><wbr>Arrow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">40</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>E<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">69</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Enter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">13</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>F<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">70</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>F1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">112</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>F10<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">121</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>F11<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">122</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>F12<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">123</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>F2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">113</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>F3<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">114</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>F4<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">115</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>F5<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">116</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>F6<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">117</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>F7<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">118</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>F8<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">119</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>F9<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">120</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>G<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">71</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>H<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">72</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>I<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">73</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Insert<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">45</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>J<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">74</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">75</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>L<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">76</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Left_<wbr><wbr>Arrow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">37</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>M<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">77</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>N<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">78</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Num_<wbr><wbr>Lock<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">144</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>O<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">79</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>P<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">80</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Q<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">81</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>R<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">82</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Right_<wbr><wbr>Arrow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">39</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>S<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">83</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Shift<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">16</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">84</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Tab<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">9</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">85</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Up_<wbr><wbr>Arrow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">38</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>V<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">86</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>W<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">87</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>X<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">88</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">89</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">90</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Object literals</h2>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
+					<a name="clipboard" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Clip<wbr>Board</h3>
+					<div class="tsd-signature tsd-kind-icon">Clip<wbr>Board<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L323">sources/dom/dom-events.ts:323</a></li>
+						</ul>
+					</aside>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="clipboard.copy" class="tsd-anchor"></a>
+						<h3>copy</h3>
+						<div class="tsd-signature tsd-kind-icon">copy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;copy&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L324">sources/dom/dom-events.ts:324</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="clipboard.cut" class="tsd-anchor"></a>
+						<h3>cut</h3>
+						<div class="tsd-signature tsd-kind-icon">cut<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;cut&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L327">sources/dom/dom-events.ts:327</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="clipboard.paste" class="tsd-anchor"></a>
+						<h3>paste</h3>
+						<div class="tsd-signature tsd-kind-icon">paste<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;paste&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L325">sources/dom/dom-events.ts:325</a></li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
+					<a name="dragdom" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Drag<wbr>Dom</h3>
+					<div class="tsd-signature tsd-kind-icon">Drag<wbr>Dom<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L330">sources/dom/dom-events.ts:330</a></li>
+						</ul>
+					</aside>
+					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
+						<a name="dragdom.__datatransfer__dropeffect_enum" class="tsd-anchor"></a>
+						<h3>__data<wbr>Transfer__drop<wbr>Effect_<wbr><wbr>Enum</h3>
+						<div class="tsd-signature tsd-kind-icon">__data<wbr>Transfer__drop<wbr>Effect_<wbr><wbr>Enum<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L362">sources/dom/dom-events.ts:362</a></li>
+							</ul>
+						</aside>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="dragdom.__datatransfer__dropeffect_enum.copy-1" class="tsd-anchor"></a>
+							<h3>copy</h3>
+							<div class="tsd-signature tsd-kind-icon">copy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;copy&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L364">sources/dom/dom-events.ts:364</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="dragdom.__datatransfer__dropeffect_enum.link" class="tsd-anchor"></a>
+							<h3>link</h3>
+							<div class="tsd-signature tsd-kind-icon">link<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;link&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L365">sources/dom/dom-events.ts:365</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="dragdom.__datatransfer__dropeffect_enum.move" class="tsd-anchor"></a>
+							<h3>move</h3>
+							<div class="tsd-signature tsd-kind-icon">move<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;move&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L363">sources/dom/dom-events.ts:363</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="dragdom.__datatransfer__dropeffect_enum.none" class="tsd-anchor"></a>
+							<h3>none</h3>
+							<div class="tsd-signature tsd-kind-icon">none<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;none&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L366">sources/dom/dom-events.ts:366</a></li>
+								</ul>
+							</aside>
+						</section>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
+						<a name="dragdom.__datatransfer__effectallowed_enum" class="tsd-anchor"></a>
+						<h3>__data<wbr>Transfer__effect<wbr>Allowed_<wbr><wbr>Enum</h3>
+						<div class="tsd-signature tsd-kind-icon">__data<wbr>Transfer__effect<wbr>Allowed_<wbr><wbr>Enum<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L369">sources/dom/dom-events.ts:369</a></li>
+							</ul>
+						</aside>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="dragdom.__datatransfer__effectallowed_enum.all" class="tsd-anchor"></a>
+							<h3>all</h3>
+							<div class="tsd-signature tsd-kind-icon">all<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;all&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L377">sources/dom/dom-events.ts:377</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="dragdom.__datatransfer__effectallowed_enum.copy-2" class="tsd-anchor"></a>
+							<h3>copy</h3>
+							<div class="tsd-signature tsd-kind-icon">copy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;copy&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L371">sources/dom/dom-events.ts:371</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="dragdom.__datatransfer__effectallowed_enum.copylink" class="tsd-anchor"></a>
+							<h3>copy<wbr>Link</h3>
+							<div class="tsd-signature tsd-kind-icon">copy<wbr>Link<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;copyLink&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L372">sources/dom/dom-events.ts:372</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="dragdom.__datatransfer__effectallowed_enum.copymove" class="tsd-anchor"></a>
+							<h3>copy<wbr>Move</h3>
+							<div class="tsd-signature tsd-kind-icon">copy<wbr>Move<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;copyMove&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L373">sources/dom/dom-events.ts:373</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="dragdom.__datatransfer__effectallowed_enum.link-1" class="tsd-anchor"></a>
+							<h3>link</h3>
+							<div class="tsd-signature tsd-kind-icon">link<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;link&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L374">sources/dom/dom-events.ts:374</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="dragdom.__datatransfer__effectallowed_enum.linkmove" class="tsd-anchor"></a>
+							<h3>link<wbr>Move</h3>
+							<div class="tsd-signature tsd-kind-icon">link<wbr>Move<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;linkMove&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L375">sources/dom/dom-events.ts:375</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="dragdom.__datatransfer__effectallowed_enum.move-1" class="tsd-anchor"></a>
+							<h3>move</h3>
+							<div class="tsd-signature tsd-kind-icon">move<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;move&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L376">sources/dom/dom-events.ts:376</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="dragdom.__datatransfer__effectallowed_enum.none-1" class="tsd-anchor"></a>
+							<h3>none</h3>
+							<div class="tsd-signature tsd-kind-icon">none<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;none&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L370">sources/dom/dom-events.ts:370</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="dragdom.__datatransfer__effectallowed_enum.uninitialized" class="tsd-anchor"></a>
+							<h3>uninitialized</h3>
+							<div class="tsd-signature tsd-kind-icon">uninitialized<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;uninitialized&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L378">sources/dom/dom-events.ts:378</a></li>
+								</ul>
+							</aside>
+						</section>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
+						<a name="dragdom.fromothers" class="tsd-anchor"></a>
+						<h3>from<wbr>Others</h3>
+						<div class="tsd-signature tsd-kind-icon">from<wbr>Others<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L343">sources/dom/dom-events.ts:343</a></li>
+							</ul>
+						</aside>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="dragdom.fromothers.dragenter" class="tsd-anchor"></a>
+							<h3>dragenter</h3>
+							<div class="tsd-signature tsd-kind-icon">dragenter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;dragenter&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L348">sources/dom/dom-events.ts:348</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>TODO 以下的事件，针对DOM自身没被拖动。  而是其他元素，被拖到了DOM之上来。</p>
+								</div>
+							</div>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="dragdom.fromothers.dragleave" class="tsd-anchor"></a>
+							<h3>dragleave</h3>
+							<div class="tsd-signature tsd-kind-icon">dragleave<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;dragleave&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L349">sources/dom/dom-events.ts:349</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="dragdom.fromothers.dragover" class="tsd-anchor"></a>
+							<h3>dragover</h3>
+							<div class="tsd-signature tsd-kind-icon">dragover<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;dragover&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L350">sources/dom/dom-events.ts:350</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="dragdom.fromothers.drop" class="tsd-anchor"></a>
+							<h3>drop</h3>
+							<div class="tsd-signature tsd-kind-icon">drop<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;drop&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L358">sources/dom/dom-events.ts:358</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>一些关于【drop】的坑
+										1.想要触发drop事件的话，必须
+										1.1 在dragover事件中使用event.preventDefault();阻止默认事件，才能触发drop事件
+									1.2 参考资料：HTML5拖放API Drag and Drop - Leechikit的专栏 - SegmentFault 思否 - <a href="https://segmentfault.com/a/1190000010127530">https://segmentfault.com/a/1190000010127530</a></p>
+								</div>
+							</div>
+						</section>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
+						<a name="dragdom.fromself" class="tsd-anchor"></a>
+						<h3>from<wbr>Self</h3>
+						<div class="tsd-signature tsd-kind-icon">from<wbr>Self<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L332">sources/dom/dom-events.ts:332</a></li>
+							</ul>
+						</aside>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="dragdom.fromself.drag" class="tsd-anchor"></a>
+							<h3>drag</h3>
+							<div class="tsd-signature tsd-kind-icon">drag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;drag&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L336">sources/dom/dom-events.ts:336</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>TODO 以下的事件，针对DOM自身被拖动。</p>
+								</div>
+							</div>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="dragdom.fromself.dragend" class="tsd-anchor"></a>
+							<h3>dragend</h3>
+							<div class="tsd-signature tsd-kind-icon">dragend<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;dragend&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L340">sources/dom/dom-events.ts:340</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="dragdom.fromself.dragstart" class="tsd-anchor"></a>
+							<h3>dragstart</h3>
+							<div class="tsd-signature tsd-kind-icon">dragstart<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;dragstart&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L339">sources/dom/dom-events.ts:339</a></li>
+								</ul>
+							</aside>
+						</section>
+					</section>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
+					<a name="mouse" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> MOUSE</h3>
+					<div class="tsd-signature tsd-kind-icon">MOUSE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L246">sources/dom/dom-events.ts:246</a></li>
+						</ul>
+					</aside>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="mouse.click" class="tsd-anchor"></a>
+						<h3>click</h3>
+						<div class="tsd-signature tsd-kind-icon">click<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;click&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L248">sources/dom/dom-events.ts:248</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="mouse.contextmenu" class="tsd-anchor"></a>
+						<h3>contextmenu</h3>
+						<div class="tsd-signature tsd-kind-icon">contextmenu<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;contextmenu&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L253">sources/dom/dom-events.ts:253</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="mouse.dblclick" class="tsd-anchor"></a>
+						<h3>dblclick</h3>
+						<div class="tsd-signature tsd-kind-icon">dblclick<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;dblclick&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L250">sources/dom/dom-events.ts:250</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="mouse.mousedown" class="tsd-anchor"></a>
+						<h3>mousedown</h3>
+						<div class="tsd-signature tsd-kind-icon">mousedown<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;mousedown&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L257">sources/dom/dom-events.ts:257</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="mouse.mouseenter" class="tsd-anchor"></a>
+						<h3>mouseenter</h3>
+						<div class="tsd-signature tsd-kind-icon">mouseenter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;mouseenter&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L262">sources/dom/dom-events.ts:262</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="mouse.mousemove" class="tsd-anchor"></a>
+						<h3>mousemove</h3>
+						<div class="tsd-signature tsd-kind-icon">mousemove<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;mousemove&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L258">sources/dom/dom-events.ts:258</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="mouse.mouseout" class="tsd-anchor"></a>
+						<h3>mouseout</h3>
+						<div class="tsd-signature tsd-kind-icon">mouseout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;mouseout&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L264">sources/dom/dom-events.ts:264</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="mouse.mouseover" class="tsd-anchor"></a>
+						<h3>mouseover</h3>
+						<div class="tsd-signature tsd-kind-icon">mouseover<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;mouseover&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L263">sources/dom/dom-events.ts:263</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="mouse.mouseup" class="tsd-anchor"></a>
+						<h3>mouseup</h3>
+						<div class="tsd-signature tsd-kind-icon">mouseup<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;mouseup&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L259">sources/dom/dom-events.ts:259</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
+						<a name="mouse.button_type" class="tsd-anchor"></a>
+						<h3>BUTTON_<wbr>TYPE</h3>
+						<div class="tsd-signature tsd-kind-icon">BUTTON_<wbr>TYPE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L266">sources/dom/dom-events.ts:266</a></li>
+							</ul>
+						</aside>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="mouse.button_type.leftbutton" class="tsd-anchor"></a>
+							<h3>Left<wbr>Button</h3>
+							<div class="tsd-signature tsd-kind-icon">Left<wbr>Button<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L267">sources/dom/dom-events.ts:267</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="mouse.button_type.rightbutton" class="tsd-anchor"></a>
+							<h3>Right<wbr>Button</h3>
+							<div class="tsd-signature tsd-kind-icon">Right<wbr>Button<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 2</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L268">sources/dom/dom-events.ts:268</a></li>
+								</ul>
+							</aside>
+						</section>
+					</section>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
+					<a name="touch" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Touch</h3>
+					<div class="tsd-signature tsd-kind-icon">Touch<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L383">sources/dom/dom-events.ts:383</a></li>
+						</ul>
+					</aside>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="touch.touchcancel" class="tsd-anchor"></a>
+						<h3>touchcancel</h3>
+						<div class="tsd-signature tsd-kind-icon">touchcancel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;touchcancel&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L389">sources/dom/dom-events.ts:389</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="touch.touchend" class="tsd-anchor"></a>
+						<h3>touchend</h3>
+						<div class="tsd-signature tsd-kind-icon">touchend<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;touchend&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L386">sources/dom/dom-events.ts:386</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="touch.touchmove" class="tsd-anchor"></a>
+						<h3>touchmove</h3>
+						<div class="tsd-signature tsd-kind-icon">touchmove<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;touchmove&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L385">sources/dom/dom-events.ts:385</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="touch.touchstart" class="tsd-anchor"></a>
+						<h3>touchstart</h3>
+						<div class="tsd-signature tsd-kind-icon">touchstart<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;touchstart&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L384">sources/dom/dom-events.ts:384</a></li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
+					<a name="window" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Window</h3>
+					<div class="tsd-signature tsd-kind-icon">Window<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L392">sources/dom/dom-events.ts:392</a></li>
+						</ul>
+					</aside>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.msgesturechange" class="tsd-anchor"></a>
+						<h3>MSGesture<wbr>Change</h3>
+						<div class="tsd-signature tsd-kind-icon">MSGesture<wbr>Change<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;MSGestureChange&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L439">sources/dom/dom-events.ts:439</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.msgesturedoubletap" class="tsd-anchor"></a>
+						<h3>MSGesture<wbr>Double<wbr>Tap</h3>
+						<div class="tsd-signature tsd-kind-icon">MSGesture<wbr>Double<wbr>Tap<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;MSGestureDoubleTap&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L440">sources/dom/dom-events.ts:440</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.msgestureend" class="tsd-anchor"></a>
+						<h3>MSGesture<wbr>End</h3>
+						<div class="tsd-signature tsd-kind-icon">MSGesture<wbr>End<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;MSGestureEnd&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L441">sources/dom/dom-events.ts:441</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.msgesturehold" class="tsd-anchor"></a>
+						<h3>MSGesture<wbr>Hold</h3>
+						<div class="tsd-signature tsd-kind-icon">MSGesture<wbr>Hold<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;MSGestureHold&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L442">sources/dom/dom-events.ts:442</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.msgesturestart" class="tsd-anchor"></a>
+						<h3>MSGesture<wbr>Start</h3>
+						<div class="tsd-signature tsd-kind-icon">MSGesture<wbr>Start<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;MSGestureStart&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L443">sources/dom/dom-events.ts:443</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.msgesturetap" class="tsd-anchor"></a>
+						<h3>MSGesture<wbr>Tap</h3>
+						<div class="tsd-signature tsd-kind-icon">MSGesture<wbr>Tap<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;MSGestureTap&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L444">sources/dom/dom-events.ts:444</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.msinertiastart" class="tsd-anchor"></a>
+						<h3>MSInertia<wbr>Start</h3>
+						<div class="tsd-signature tsd-kind-icon">MSInertia<wbr>Start<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;MSInertiaStart&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L445">sources/dom/dom-events.ts:445</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.mspointercancel" class="tsd-anchor"></a>
+						<h3>MSPointer<wbr>Cancel</h3>
+						<div class="tsd-signature tsd-kind-icon">MSPointer<wbr>Cancel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;MSPointerCancel&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L446">sources/dom/dom-events.ts:446</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.mspointerdown" class="tsd-anchor"></a>
+						<h3>MSPointer<wbr>Down</h3>
+						<div class="tsd-signature tsd-kind-icon">MSPointer<wbr>Down<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;MSPointerDown&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L447">sources/dom/dom-events.ts:447</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.mspointerenter" class="tsd-anchor"></a>
+						<h3>MSPointer<wbr>Enter</h3>
+						<div class="tsd-signature tsd-kind-icon">MSPointer<wbr>Enter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;MSPointerEnter&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L448">sources/dom/dom-events.ts:448</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.mspointerleave" class="tsd-anchor"></a>
+						<h3>MSPointer<wbr>Leave</h3>
+						<div class="tsd-signature tsd-kind-icon">MSPointer<wbr>Leave<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;MSPointerLeave&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L449">sources/dom/dom-events.ts:449</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.mspointermove" class="tsd-anchor"></a>
+						<h3>MSPointer<wbr>Move</h3>
+						<div class="tsd-signature tsd-kind-icon">MSPointer<wbr>Move<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;MSPointerMove&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L450">sources/dom/dom-events.ts:450</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.mspointerout" class="tsd-anchor"></a>
+						<h3>MSPointer<wbr>Out</h3>
+						<div class="tsd-signature tsd-kind-icon">MSPointer<wbr>Out<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;MSPointerOut&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L451">sources/dom/dom-events.ts:451</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.mspointerover" class="tsd-anchor"></a>
+						<h3>MSPointer<wbr>Over</h3>
+						<div class="tsd-signature tsd-kind-icon">MSPointer<wbr>Over<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;MSPointerOver&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L452">sources/dom/dom-events.ts:452</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.mspointerup" class="tsd-anchor"></a>
+						<h3>MSPointer<wbr>Up</h3>
+						<div class="tsd-signature tsd-kind-icon">MSPointer<wbr>Up<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;MSPointerUp&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L453">sources/dom/dom-events.ts:453</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.abort" class="tsd-anchor"></a>
+						<h3>abort</h3>
+						<div class="tsd-signature tsd-kind-icon">abort<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;abort&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L393">sources/dom/dom-events.ts:393</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.afterprint" class="tsd-anchor"></a>
+						<h3>afterprint</h3>
+						<div class="tsd-signature tsd-kind-icon">afterprint<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;afterprint&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L394">sources/dom/dom-events.ts:394</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.beforeprint" class="tsd-anchor"></a>
+						<h3>beforeprint</h3>
+						<div class="tsd-signature tsd-kind-icon">beforeprint<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;beforeprint&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L395">sources/dom/dom-events.ts:395</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.beforeunload" class="tsd-anchor"></a>
+						<h3>beforeunload</h3>
+						<div class="tsd-signature tsd-kind-icon">beforeunload<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;beforeunload&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L396">sources/dom/dom-events.ts:396</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.blur" class="tsd-anchor"></a>
+						<h3>blur</h3>
+						<div class="tsd-signature tsd-kind-icon">blur<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;blur&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L397">sources/dom/dom-events.ts:397</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.canplay" class="tsd-anchor"></a>
+						<h3>canplay</h3>
+						<div class="tsd-signature tsd-kind-icon">canplay<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;canplay&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L398">sources/dom/dom-events.ts:398</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.canplaythrough" class="tsd-anchor"></a>
+						<h3>canplaythrough</h3>
+						<div class="tsd-signature tsd-kind-icon">canplaythrough<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;canplaythrough&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L399">sources/dom/dom-events.ts:399</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.change" class="tsd-anchor"></a>
+						<h3>change</h3>
+						<div class="tsd-signature tsd-kind-icon">change<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;change&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L400">sources/dom/dom-events.ts:400</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.click-1" class="tsd-anchor"></a>
+						<h3>click</h3>
+						<div class="tsd-signature tsd-kind-icon">click<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;click&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L401">sources/dom/dom-events.ts:401</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.compassneedscalibration" class="tsd-anchor"></a>
+						<h3>compassneedscalibration</h3>
+						<div class="tsd-signature tsd-kind-icon">compassneedscalibration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;compassneedscalibration&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L402">sources/dom/dom-events.ts:402</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.contextmenu-1" class="tsd-anchor"></a>
+						<h3>contextmenu</h3>
+						<div class="tsd-signature tsd-kind-icon">contextmenu<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;contextmenu&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L403">sources/dom/dom-events.ts:403</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.dblclick-1" class="tsd-anchor"></a>
+						<h3>dblclick</h3>
+						<div class="tsd-signature tsd-kind-icon">dblclick<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;dblclick&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L404">sources/dom/dom-events.ts:404</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.devicelight" class="tsd-anchor"></a>
+						<h3>devicelight</h3>
+						<div class="tsd-signature tsd-kind-icon">devicelight<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;devicelight&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L405">sources/dom/dom-events.ts:405</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.devicemotion" class="tsd-anchor"></a>
+						<h3>devicemotion</h3>
+						<div class="tsd-signature tsd-kind-icon">devicemotion<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;devicemotion&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L406">sources/dom/dom-events.ts:406</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.deviceorientation" class="tsd-anchor"></a>
+						<h3>deviceorientation</h3>
+						<div class="tsd-signature tsd-kind-icon">deviceorientation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;deviceorientation&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L407">sources/dom/dom-events.ts:407</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.drag-1" class="tsd-anchor"></a>
+						<h3>drag</h3>
+						<div class="tsd-signature tsd-kind-icon">drag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;drag&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L408">sources/dom/dom-events.ts:408</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.dragend-1" class="tsd-anchor"></a>
+						<h3>dragend</h3>
+						<div class="tsd-signature tsd-kind-icon">dragend<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;dragend&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L409">sources/dom/dom-events.ts:409</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.dragenter-1" class="tsd-anchor"></a>
+						<h3>dragenter</h3>
+						<div class="tsd-signature tsd-kind-icon">dragenter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;dragenter&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L410">sources/dom/dom-events.ts:410</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.dragleave-1" class="tsd-anchor"></a>
+						<h3>dragleave</h3>
+						<div class="tsd-signature tsd-kind-icon">dragleave<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;dragleave&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L411">sources/dom/dom-events.ts:411</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.dragover-1" class="tsd-anchor"></a>
+						<h3>dragover</h3>
+						<div class="tsd-signature tsd-kind-icon">dragover<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;dragover&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L412">sources/dom/dom-events.ts:412</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.dragstart-1" class="tsd-anchor"></a>
+						<h3>dragstart</h3>
+						<div class="tsd-signature tsd-kind-icon">dragstart<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;dragstart&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L413">sources/dom/dom-events.ts:413</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.drop-1" class="tsd-anchor"></a>
+						<h3>drop</h3>
+						<div class="tsd-signature tsd-kind-icon">drop<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;drop&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L414">sources/dom/dom-events.ts:414</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.durationchange" class="tsd-anchor"></a>
+						<h3>durationchange</h3>
+						<div class="tsd-signature tsd-kind-icon">durationchange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;durationchange&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L415">sources/dom/dom-events.ts:415</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.emptied" class="tsd-anchor"></a>
+						<h3>emptied</h3>
+						<div class="tsd-signature tsd-kind-icon">emptied<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;emptied&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L416">sources/dom/dom-events.ts:416</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.ended" class="tsd-anchor"></a>
+						<h3>ended</h3>
+						<div class="tsd-signature tsd-kind-icon">ended<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;ended&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L417">sources/dom/dom-events.ts:417</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.error" class="tsd-anchor"></a>
+						<h3>error</h3>
+						<div class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;error&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L418">sources/dom/dom-events.ts:418</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.focus" class="tsd-anchor"></a>
+						<h3>focus</h3>
+						<div class="tsd-signature tsd-kind-icon">focus<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;focus&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L419">sources/dom/dom-events.ts:419</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.hashchange" class="tsd-anchor"></a>
+						<h3>hashchange</h3>
+						<div class="tsd-signature tsd-kind-icon">hashchange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;hashchange&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L420">sources/dom/dom-events.ts:420</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.input" class="tsd-anchor"></a>
+						<h3>input</h3>
+						<div class="tsd-signature tsd-kind-icon">input<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;input&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L421">sources/dom/dom-events.ts:421</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.invalid" class="tsd-anchor"></a>
+						<h3>invalid</h3>
+						<div class="tsd-signature tsd-kind-icon">invalid<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;invalid&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L422">sources/dom/dom-events.ts:422</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.keydown-1" class="tsd-anchor"></a>
+						<h3>keydown</h3>
+						<div class="tsd-signature tsd-kind-icon">keydown<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;keydown&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L423">sources/dom/dom-events.ts:423</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.keypress-1" class="tsd-anchor"></a>
+						<h3>keypress</h3>
+						<div class="tsd-signature tsd-kind-icon">keypress<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;keypress&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L424">sources/dom/dom-events.ts:424</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.keyup-1" class="tsd-anchor"></a>
+						<h3>keyup</h3>
+						<div class="tsd-signature tsd-kind-icon">keyup<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;keyup&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L425">sources/dom/dom-events.ts:425</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.load" class="tsd-anchor"></a>
+						<h3>load</h3>
+						<div class="tsd-signature tsd-kind-icon">load<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;load&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L426">sources/dom/dom-events.ts:426</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.loadeddata" class="tsd-anchor"></a>
+						<h3>loadeddata</h3>
+						<div class="tsd-signature tsd-kind-icon">loadeddata<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;loadeddata&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L427">sources/dom/dom-events.ts:427</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.loadedmetadata" class="tsd-anchor"></a>
+						<h3>loadedmetadata</h3>
+						<div class="tsd-signature tsd-kind-icon">loadedmetadata<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;loadedmetadata&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L428">sources/dom/dom-events.ts:428</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.loadstart" class="tsd-anchor"></a>
+						<h3>loadstart</h3>
+						<div class="tsd-signature tsd-kind-icon">loadstart<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;loadstart&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L429">sources/dom/dom-events.ts:429</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.message" class="tsd-anchor"></a>
+						<h3>message</h3>
+						<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;message&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L430">sources/dom/dom-events.ts:430</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.mousedown-1" class="tsd-anchor"></a>
+						<h3>mousedown</h3>
+						<div class="tsd-signature tsd-kind-icon">mousedown<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;mousedown&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L431">sources/dom/dom-events.ts:431</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.mouseenter-1" class="tsd-anchor"></a>
+						<h3>mouseenter</h3>
+						<div class="tsd-signature tsd-kind-icon">mouseenter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;mouseenter&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L432">sources/dom/dom-events.ts:432</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.mouseleave" class="tsd-anchor"></a>
+						<h3>mouseleave</h3>
+						<div class="tsd-signature tsd-kind-icon">mouseleave<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;mouseleave&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L433">sources/dom/dom-events.ts:433</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.mousemove-1" class="tsd-anchor"></a>
+						<h3>mousemove</h3>
+						<div class="tsd-signature tsd-kind-icon">mousemove<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;mousemove&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L434">sources/dom/dom-events.ts:434</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.mouseout-1" class="tsd-anchor"></a>
+						<h3>mouseout</h3>
+						<div class="tsd-signature tsd-kind-icon">mouseout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;mouseout&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L435">sources/dom/dom-events.ts:435</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.mouseover-1" class="tsd-anchor"></a>
+						<h3>mouseover</h3>
+						<div class="tsd-signature tsd-kind-icon">mouseover<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;mouseover&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L436">sources/dom/dom-events.ts:436</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.mouseup-1" class="tsd-anchor"></a>
+						<h3>mouseup</h3>
+						<div class="tsd-signature tsd-kind-icon">mouseup<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;mouseup&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L437">sources/dom/dom-events.ts:437</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.mousewheel" class="tsd-anchor"></a>
+						<h3>mousewheel</h3>
+						<div class="tsd-signature tsd-kind-icon">mousewheel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;mousewheel&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L438">sources/dom/dom-events.ts:438</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.offline" class="tsd-anchor"></a>
+						<h3>offline</h3>
+						<div class="tsd-signature tsd-kind-icon">offline<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;offline&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L454">sources/dom/dom-events.ts:454</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.online" class="tsd-anchor"></a>
+						<h3>online</h3>
+						<div class="tsd-signature tsd-kind-icon">online<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;online&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L455">sources/dom/dom-events.ts:455</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.orientationchange" class="tsd-anchor"></a>
+						<h3>orientationchange</h3>
+						<div class="tsd-signature tsd-kind-icon">orientationchange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;orientationchange&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L456">sources/dom/dom-events.ts:456</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.pagehide" class="tsd-anchor"></a>
+						<h3>pagehide</h3>
+						<div class="tsd-signature tsd-kind-icon">pagehide<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;pagehide&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L457">sources/dom/dom-events.ts:457</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.pageshow" class="tsd-anchor"></a>
+						<h3>pageshow</h3>
+						<div class="tsd-signature tsd-kind-icon">pageshow<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;pageshow&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L458">sources/dom/dom-events.ts:458</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.pause" class="tsd-anchor"></a>
+						<h3>pause</h3>
+						<div class="tsd-signature tsd-kind-icon">pause<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;pause&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L459">sources/dom/dom-events.ts:459</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.play" class="tsd-anchor"></a>
+						<h3>play</h3>
+						<div class="tsd-signature tsd-kind-icon">play<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;play&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L460">sources/dom/dom-events.ts:460</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.playing" class="tsd-anchor"></a>
+						<h3>playing</h3>
+						<div class="tsd-signature tsd-kind-icon">playing<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;playing&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L461">sources/dom/dom-events.ts:461</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.popstate" class="tsd-anchor"></a>
+						<h3>popstate</h3>
+						<div class="tsd-signature tsd-kind-icon">popstate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;popstate&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L462">sources/dom/dom-events.ts:462</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.progress" class="tsd-anchor"></a>
+						<h3>progress</h3>
+						<div class="tsd-signature tsd-kind-icon">progress<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;progress&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L463">sources/dom/dom-events.ts:463</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.ratechange" class="tsd-anchor"></a>
+						<h3>ratechange</h3>
+						<div class="tsd-signature tsd-kind-icon">ratechange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;ratechange&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L464">sources/dom/dom-events.ts:464</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.readystatechange" class="tsd-anchor"></a>
+						<h3>readystatechange</h3>
+						<div class="tsd-signature tsd-kind-icon">readystatechange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;readystatechange&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L465">sources/dom/dom-events.ts:465</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.reset" class="tsd-anchor"></a>
+						<h3>reset</h3>
+						<div class="tsd-signature tsd-kind-icon">reset<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;reset&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L466">sources/dom/dom-events.ts:466</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.resize" class="tsd-anchor"></a>
+						<h3>resize</h3>
+						<div class="tsd-signature tsd-kind-icon">resize<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;resize&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L467">sources/dom/dom-events.ts:467</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.scroll" class="tsd-anchor"></a>
+						<h3>scroll</h3>
+						<div class="tsd-signature tsd-kind-icon">scroll<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;scroll&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L468">sources/dom/dom-events.ts:468</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.seeked" class="tsd-anchor"></a>
+						<h3>seeked</h3>
+						<div class="tsd-signature tsd-kind-icon">seeked<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;seeked&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L469">sources/dom/dom-events.ts:469</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.seeking" class="tsd-anchor"></a>
+						<h3>seeking</h3>
+						<div class="tsd-signature tsd-kind-icon">seeking<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;seeking&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L470">sources/dom/dom-events.ts:470</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.select" class="tsd-anchor"></a>
+						<h3>select</h3>
+						<div class="tsd-signature tsd-kind-icon">select<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;select&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L471">sources/dom/dom-events.ts:471</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.stalled" class="tsd-anchor"></a>
+						<h3>stalled</h3>
+						<div class="tsd-signature tsd-kind-icon">stalled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;stalled&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L472">sources/dom/dom-events.ts:472</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.storage" class="tsd-anchor"></a>
+						<h3>storage</h3>
+						<div class="tsd-signature tsd-kind-icon">storage<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;storage&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L473">sources/dom/dom-events.ts:473</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.submit" class="tsd-anchor"></a>
+						<h3>submit</h3>
+						<div class="tsd-signature tsd-kind-icon">submit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;submit&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L474">sources/dom/dom-events.ts:474</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.suspend" class="tsd-anchor"></a>
+						<h3>suspend</h3>
+						<div class="tsd-signature tsd-kind-icon">suspend<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;suspend&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L475">sources/dom/dom-events.ts:475</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.timeupdate" class="tsd-anchor"></a>
+						<h3>timeupdate</h3>
+						<div class="tsd-signature tsd-kind-icon">timeupdate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;timeupdate&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L476">sources/dom/dom-events.ts:476</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.unload" class="tsd-anchor"></a>
+						<h3>unload</h3>
+						<div class="tsd-signature tsd-kind-icon">unload<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;unload&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L477">sources/dom/dom-events.ts:477</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.volumechange" class="tsd-anchor"></a>
+						<h3>volumechange</h3>
+						<div class="tsd-signature tsd-kind-icon">volumechange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;volumechange&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L478">sources/dom/dom-events.ts:478</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.vrdisplayactivate" class="tsd-anchor"></a>
+						<h3>vrdisplayactivate</h3>
+						<div class="tsd-signature tsd-kind-icon">vrdisplayactivate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;vrdisplayactivate&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L479">sources/dom/dom-events.ts:479</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.vrdisplayblur" class="tsd-anchor"></a>
+						<h3>vrdisplayblur</h3>
+						<div class="tsd-signature tsd-kind-icon">vrdisplayblur<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;vrdisplayblur&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L480">sources/dom/dom-events.ts:480</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.vrdisplayconnect" class="tsd-anchor"></a>
+						<h3>vrdisplayconnect</h3>
+						<div class="tsd-signature tsd-kind-icon">vrdisplayconnect<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;vrdisplayconnect&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L481">sources/dom/dom-events.ts:481</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.vrdisplaydeactivate" class="tsd-anchor"></a>
+						<h3>vrdisplaydeactivate</h3>
+						<div class="tsd-signature tsd-kind-icon">vrdisplaydeactivate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;vrdisplaydeactivate&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L482">sources/dom/dom-events.ts:482</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.vrdisplaydisconnect" class="tsd-anchor"></a>
+						<h3>vrdisplaydisconnect</h3>
+						<div class="tsd-signature tsd-kind-icon">vrdisplaydisconnect<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;vrdisplaydisconnect&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L483">sources/dom/dom-events.ts:483</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.vrdisplayfocus" class="tsd-anchor"></a>
+						<h3>vrdisplayfocus</h3>
+						<div class="tsd-signature tsd-kind-icon">vrdisplayfocus<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;vrdisplayfocus&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L484">sources/dom/dom-events.ts:484</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.vrdisplaypointerrestricted" class="tsd-anchor"></a>
+						<h3>vrdisplaypointerrestricted</h3>
+						<div class="tsd-signature tsd-kind-icon">vrdisplaypointerrestricted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;vrdisplaypointerrestricted&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L485">sources/dom/dom-events.ts:485</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.vrdisplaypointerunrestricted" class="tsd-anchor"></a>
+						<h3>vrdisplaypointerunrestricted</h3>
+						<div class="tsd-signature tsd-kind-icon">vrdisplaypointerunrestricted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;vrdisplaypointerunrestricted&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L486">sources/dom/dom-events.ts:486</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.vrdisplaypresentchange" class="tsd-anchor"></a>
+						<h3>vrdisplaypresentchange</h3>
+						<div class="tsd-signature tsd-kind-icon">vrdisplaypresentchange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;vrdisplaypresentchange&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L487">sources/dom/dom-events.ts:487</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="window.waiting" class="tsd-anchor"></a>
+						<h3>waiting</h3>
+						<div class="tsd-signature tsd-kind-icon">waiting<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;waiting&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/dom/dom-events.ts#L488">sources/dom/dom-events.ts:488</a></li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class">
+						<a href="xx_browsereventmap.html" class="tsd-kind-icon">x<wbr>X_<wbr><wbr>Browser<wbr>Event<wbr>Map</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="xx_browsereventmap.html#keyboard" class="tsd-kind-icon">KEYBOARD</a>
+							</li>
+							<li class=" tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
+								<a href="xx_browsereventmap.html#clipboard" class="tsd-kind-icon">Clip<wbr>Board</a>
+							</li>
+							<li class=" tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
+								<a href="xx_browsereventmap.html#dragdom" class="tsd-kind-icon">Drag<wbr>Dom</a>
+							</li>
+							<li class=" tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
+								<a href="xx_browsereventmap.html#mouse" class="tsd-kind-icon">MOUSE</a>
+							</li>
+							<li class=" tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
+								<a href="xx_browsereventmap.html#touch" class="tsd-kind-icon">Touch</a>
+							</li>
+							<li class=" tsd-kind-object-literal tsd-parent-kind-class tsd-is-static">
+								<a href="xx_browsereventmap.html#window" class="tsd-kind-icon">Window</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

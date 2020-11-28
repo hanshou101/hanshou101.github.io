@@ -1,0 +1,298 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Upload | use-on-demand</title>
+	<meta name="description" content="Documentation for use-on-demand">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">use-on-demand</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/xx_download_upload_helper.html">xX_Download_Upload_Helper</a>
+				</li>
+				<li>
+					<a href="xx_download_upload_helper.upload.html">Upload</a>
+				</li>
+			</ul>
+			<h1>Class Upload</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Upload</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="xx_download_upload_helper.upload.html#acceptmap" class="tsd-kind-icon">accept<wbr>Map</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="xx_download_upload_helper.upload.html#imageexts" class="tsd-kind-icon">image<wbr>Exts</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="xx_download_upload_helper.upload.html#checkfileext" class="tsd-kind-icon">check<wbr>File<wbr>Ext</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="acceptmap" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> accept<wbr>Map</h3>
+					<div class="tsd-signature tsd-kind-icon">accept<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>excel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>image<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = {/*** 1.此处，StackOverFlow，给出的高赞答案，在【macOS 10.15.7 Catalina】版本下，是有错误的：* 				【Excel 的 accept】https://stackoverflow.com/a/11834872/6264260** 2.所以，我们通过【试验】+【总结其它答案】，拼凑出了一条，比较完整的。* 				个人总结的答案：https://stackoverflow.com/a/64926038/6264260*/excel: [&#x27;.csv&#x27;,&#x27;.xls&#x27;,&#x27;.xlsx&#x27;,//&#x27;text/csv&#x27;,														// 有局限，不推荐&#x27;application/csv&#x27;,										// 有局限，不推荐&#x27;text/comma-separated-values&#x27;,				// 仅适用于 Opera&#x27;application/csv&#x27;,							// 仅作候补尝试&#x27;application/excel&#x27;,						// 仅作候补尝试// &#x27;application/vnd.ms-excel&#x27;,			// 仅作候补尝试&#x27;application/vnd.msexcel&#x27;,			// 仅作候补尝试&#x27;text/anytext&#x27;,									// 仅作候补尝试//&#x27;application/vnd.ms-excel&#x27;,&#x27;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet&#x27;,].join(&#x27; , &#x27;),image: Upload.imageExts.map(type &#x3D;&gt; &#x60;image/${type}&#x60;).join(&#x27; , &#x27;),} as const</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/platform-ecosystem-compatible/download-upload/Download_Upload_Helper.ts#L42">sources/platform-ecosystem-compatible/download-upload/Download_Upload_Helper.ts:42</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>excel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>1.此处，StackOverFlow，给出的高赞答案，在【macOS 10.15.7 Catalina】版本下，是有错误的：
+										【Excel 的 accept】<a href="https://stackoverflow.com/a/11834872/6264260">https://stackoverflow.com/a/11834872/6264260</a></p>
+									</div>
+									<p>2.所以，我们通过【试验】+【总结其它答案】，拼凑出了一条，比较完整的。
+									个人总结的答案：<a href="https://stackoverflow.com/a/64926038/6264260">https://stackoverflow.com/a/64926038/6264260</a></p>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5>image<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="imageexts" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> image<wbr>Exts</h3>
+					<div class="tsd-signature tsd-kind-icon">image<wbr>Exts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [		// 注意，都转化为小写的。&#x27;JPG&#x27;,&#x27;JPEG&#x27;,&#x27;PNG&#x27;,//&#x27;BMP&#x27;,&#x27;GIF&#x27;,&#x27;WEBP&#x27;,//&#x27;JFIF&#x27;,&#x27;PJPEG&#x27;,&#x27;PJP&#x27;,&#x27;TIF&#x27;,&#x27;PCX&#x27;,&#x27;TGA&#x27;,&#x27;EXIF&#x27;,&#x27;FPX&#x27;,&#x27;SVG&#x27;,&#x27;PSD&#x27;,&#x27;CDR&#x27;,&#x27;PCD&#x27;,&#x27;DXF&#x27;,&#x27;UFO&#x27;,&#x27;EPS&#x27;,&#x27;AI&#x27;,&#x27;RAW&#x27;,&#x27;WMF&#x27;,&#x27;AVIF&#x27;,].map(name &#x3D;&gt; name.toLowerCase())</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/platform-ecosystem-compatible/download-upload/Download_Upload_Helper.ts#L12">sources/platform-ecosystem-compatible/download-upload/Download_Upload_Helper.ts:12</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>1.参考资料：
+							<a href="https://baike.baidu.com/item/%E5%9B%BE%E7%89%87%E6%A0%BC%E5%BC%8F/381122?fr=aladdin">图片格式_百度百科</a></p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="checkfileext" class="tsd-anchor"></a>
+					<h3>check<wbr>File<wbr>Ext</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>File<wbr>Ext<span class="tsd-signature-symbol">(</span>sender<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLInputElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hanshou101/use-on-demand/blob/3a9fd0d/sources/platform-ecosystem-compatible/download-upload/Download_Upload_Helper.ts#L79">sources/platform-ecosystem-compatible/download-upload/Download_Upload_Helper.ts:79</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>检查【文件后缀名】</p>
+								</div>
+								<p>1.参考资料：
+									<a href="https://stackoverflow.com/a/11833377/6264260">https://stackoverflow.com/a/11833377/6264260</a>
+								<a href="https://stackoverflow.com/a/25230749/6264260">https://stackoverflow.com/a/25230749/6264260</a></p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sender: <span class="tsd-signature-type">HTMLInputElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/countdownns.html">Count<wbr>DownNS</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/echons.html">EchoNS</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/flagjsonns.html">Flag<wbr>JsonNS</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/jqajax_ns.html">Jq<wbr>Ajax_<wbr>NS</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/old.html">Old</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/serviceworker_helper.html">Service<wbr>Worker_<wbr><wbr>Helper</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/__global.html">__global</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/a.html">a</a>
+					</li>
+					<li class="current tsd-kind-namespace">
+						<a href="../modules/xx_download_upload_helper.html">x<wbr>X_<wbr><wbr>Download_<wbr><wbr>Upload_<wbr><wbr>Helper</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/xx_father_elfitem.html">x<wbr>X_<wbr><wbr>Father_<wbr><wbr>ElFItem</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/xx_father_eltitem.html">x<wbr>X_<wbr><wbr>Father_<wbr><wbr>ElTItem</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/xx_vuei18n_cli.html">x<wbr>X_<wbr><wbr>Vue<wbr>I18<wbr>N_<wbr><wbr>Cli</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/xx_vuei18n_simplifyslim_helper.html">x<wbr>X_<wbr><wbr>Vue<wbr>I18<wbr>N_<wbr>simplify<wbr>Slim_<wbr><wbr>Helper</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/xx_webworker_helper.html">x<wbr>X_<wbr><wbr>Web<wbr>Worker_<wbr><wbr>Helper</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="xx_download_upload_helper.download.html" class="tsd-kind-icon">Download</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-namespace">
+						<a href="xx_download_upload_helper.upload.html" class="tsd-kind-icon">Upload</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="xx_download_upload_helper.upload.html#acceptmap" class="tsd-kind-icon">accept<wbr>Map</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="xx_download_upload_helper.upload.html#imageexts" class="tsd-kind-icon">image<wbr>Exts</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="xx_download_upload_helper.upload.html#checkfileext" class="tsd-kind-icon">check<wbr>File<wbr>Ext</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
