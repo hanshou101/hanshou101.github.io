@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>严崇文 · AI 大玩家</title>
+<meta name="description" content="不做 AI，玩 AI。这行三个月一次改朝换代，我每次都在第一批。">
+<meta property="og:title" content="严崇文 · AI 大玩家">
+<meta property="og:description" content="AI 能在一个下午复制我的任何一项技能，但复制不了这八年。">
+<meta property="og:type" content="profile">
+<style>
+:root{
+  color-scheme: dark;
+  --surface-1:#1a1a19;
+  --surface-2:#222221;
+  --surface-3:#2b2b29;
+  --hairline:#383835;
+  --text-primary:#ffffff;
+  --text-secondary:#c3c2b7;
+  --text-muted:#8a8980;
+  --accent:#3987e5;
+  --accent-soft:rgba(57,135,229,.14);
+  /* ordinal ramp — one hue, 3 eras, validated on this surface */
+  --era1:#184f95; --era2:#3987e5; --era3:#9ec5f4;
+}
+:root[data-theme="light"]{
+  color-scheme: light;
+  --surface-1:#fcfcfb;
+  --surface-2:#f4f3f0;
+  --surface-3:#eceae5;
+  --hairline:#dedcd6;
+  --text-primary:#0b0b0b;
+  --text-secondary:#52514e;
+  --text-muted:#7d7c75;
+  --accent:#2a78d6;
+  --accent-soft:rgba(42,120,214,.10);
+  --era1:#86b6ef; --era2:#2a78d6; --era3:#0d366b;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--surface-1);
+  color:var(--text-primary);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC","Noto Sans CJK SC",sans-serif;
+  font-size:16px;line-height:1.85;
+  letter-spacing:.01em;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 28px}
+section{padding:96px 0;border-top:1px solid var(--hairline)}
+section:first-of-type{border-top:none}
+
+/* ── top bar ───────────────────────────────── */
+.bar{
+  position:sticky;top:0;z-index:20;
+  background:color-mix(in srgb,var(--surface-1) 88%,transparent);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--hairline);
+}
+.bar-in{max-width:760px;margin:0 auto;padding:12px 28px;display:flex;align-items:center;gap:16px}
+.sig{font-size:14px;font-weight:600;letter-spacing:.02em}
+.sig span{color:var(--text-muted);font-weight:400}
+.spacer{flex:1}
+.toggle{
+  background:none;border:1px solid var(--hairline);color:var(--text-secondary);
+  border-radius:999px;padding:5px 13px;font-size:12px;cursor:pointer;font-family:inherit;
+  transition:border-color .15s,color .15s;
+}
+.toggle:hover{border-color:var(--accent);color:var(--text-primary)}
+
+/* ── expiry badge ──────────────────────────── */
+.expiry{
+  display:inline-flex;align-items:center;gap:9px;
+  border:1px solid var(--hairline);border-radius:999px;
+  padding:6px 15px 6px 12px;font-size:12.5px;color:var(--text-secondary);
+  background:var(--surface-2);
+}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex:none}
+.expiry b{color:var(--text-primary);font-weight:600}
+
+/* ── hero ──────────────────────────────────── */
+.hero{padding:76px 0 88px}
+.hero h1{
+  font-size:clamp(40px,8.5vw,68px);line-height:1.12;letter-spacing:-.02em;
+  font-weight:700;margin:26px 0 0;
+}
+.hero h1 em{font-style:normal;color:var(--text-muted);font-weight:400;display:block;font-size:clamp(17px,3.4vw,22px);letter-spacing:.06em;margin-bottom:14px}
+.lede{font-size:clamp(18px,3.6vw,22px);line-height:1.75;color:var(--text-secondary);margin-top:30px;max-width:44ch}
+.lede strong{color:var(--text-primary);font-weight:600}
+.mountain{width:100%;height:auto;display:block;margin:52px 0 0}
+
+/* ── type ──────────────────────────────────── */
+.kicker{
+  font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--text-muted);font-weight:600;margin-bottom:18px;
+}
+h2{font-size:clamp(27px,5.2vw,36px);line-height:1.3;letter-spacing:-.015em;font-weight:700;margin-bottom:22px}
+h3{font-size:19px;font-weight:650;letter-spacing:-.005em;margin-bottom:9px}
+p{color:var(--text-secondary);margin-bottom:19px;max-width:60ch}
+p strong,li strong{color:var(--text-primary);font-weight:600}
+p:last-child{margin-bottom:0}
+.big{font-size:clamp(20px,4vw,25px);line-height:1.65;color:var(--text-primary);font-weight:500;max-width:34ch}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s}
+a:hover{border-bottom-color:var(--accent)}
+
+blockquote{
+  border-left:2px solid var(--accent);
+  padding:2px 0 2px 22px;margin:30px 0;
+  font-size:18px;line-height:1.78;color:var(--text-primary);max-width:46ch;
+}
+
+/* ── flagship card ─────────────────────────── */
+.card{
+  background:var(--surface-2);border:1px solid var(--hairline);
+  border-radius:16px;overflow:hidden;margin-top:32px;
+}
+.cover{display:block;width:100%;height:auto}
+.card-body{padding:26px 26px 28px}
+.tagrow{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:15px}
+.tag{
+  font-size:11.5px;letter-spacing:.03em;color:var(--text-secondary);
+  border:1px solid var(--hairline);border-radius:999px;padding:3px 10px;
+  background:var(--surface-1);
+}
+.tag.live{color:var(--text-primary);border-color:var(--accent);background:var(--accent-soft)}
+.card-body h3{font-size:23px;margin-bottom:11px}
+.card-body p{margin-bottom:0;font-size:15.5px}
+.credit{
+  margin-top:20px;padding-top:19px;border-top:1px solid var(--hairline);
+  font-size:15px;color:var(--text-secondary);
+}
+.credit b{color:var(--text-primary);font-weight:600}
+
+/* ── timeline ──────────────────────────────── */
+.tl{margin-top:38px;position:relative}
+.tl::before{content:"";position:absolute;left:6px;top:8px;bottom:8px;width:1px;background:var(--hairline)}
+.node{position:relative;padding:0 0 26px 34px}
+.node:last-child{padding-bottom:0}
+.node i{
+  position:absolute;left:0;top:8px;width:13px;height:13px;border-radius:50%;
+  border:2.5px solid var(--surface-1);
+}
+.node .yr{font-size:12.5px;color:var(--text-muted);letter-spacing:.06em;font-variant-numeric:tabular-nums}
+.node .nm{font-size:16px;font-weight:600;color:var(--text-primary);margin:1px 0 3px}
+.node .ds{font-size:14.5px;color:var(--text-secondary);line-height:1.65;max-width:52ch}
+
+/* ── archive ───────────────────────────────── */
+.arc{margin-top:30px;display:grid;gap:0}
+.rec{
+  display:grid;grid-template-columns:78px 1fr;gap:20px;
+  padding:17px 0;border-top:1px solid var(--hairline);align-items:baseline;
+}
+.rec:last-child{border-bottom:1px solid var(--hairline)}
+.rec .when{font-size:13px;color:var(--text-muted);font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.rec .what{font-size:15px;color:var(--text-secondary);line-height:1.7}
+.rec .what b{color:var(--text-primary);font-weight:600}
+.note{
+  margin-top:26px;padding:17px 19px;border-radius:11px;
+  background:var(--surface-2);border:1px solid var(--hairline);
+  font-size:14.5px;color:var(--text-secondary);line-height:1.72;
+}
+
+/* ── rule list ─────────────────────────────── */
+ol.rules{margin:26px 0 0;padding:0;list-style:none;counter-reset:r}
+ol.rules li{
+  counter-increment:r;position:relative;padding:0 0 20px 40px;
+  color:var(--text-secondary);font-size:15.5px;line-height:1.72;max-width:56ch;
+}
+ol.rules li:last-child{padding-bottom:0}
+ol.rules li::before{
+  content:counter(r);position:absolute;left:0;top:2px;
+  width:25px;height:25px;border-radius:50%;
+  background:var(--surface-3);color:var(--text-primary);
+  font-size:12.5px;font-weight:650;display:flex;align-items:center;justify-content:center;
+}
+
+/* ── contact ───────────────────────────────── */
+.links{display:flex;flex-wrap:wrap;gap:11px;margin-top:26px}
+.links a{
+  border:1px solid var(--hairline);border-radius:10px;padding:11px 17px;
+  color:var(--text-primary);font-size:14.5px;background:var(--surface-2);
+  transition:border-color .15s,transform .15s;
+}
+.links a:hover{border-color:var(--accent);border-bottom-color:var(--accent);transform:translateY(-1px)}
+.links a span{color:var(--text-muted);font-size:12.5px;display:block;margin-bottom:1px}
+
+footer{padding:52px 0 72px;border-top:1px solid var(--hairline);color:var(--text-muted);font-size:13px}
+footer p{color:var(--text-muted);font-size:13px;margin-bottom:7px}
+
+@media(max-width:560px){
+  section{padding:70px 0}
+  .rec{grid-template-columns:1fr;gap:4px}
+  .wrap,.bar-in{padding-left:20px;padding-right:20px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="bar-in">
+    <div class="sig">严崇文 <span>· 小严同学</span></div>
+    <div class="spacer"></div>
+    <button class="toggle" id="tg" aria-label="切换明暗主题">明 / 暗</button>
+  </div>
+</div>
+
+<div class="wrap">
+
+<!-- ══ HERO ══════════════════════════════════ -->
+<section class="hero">
+  <span class="expiry"><span class="dot"></span>本页有效期至 <b>2026.11</b> · 到期重写</span>
+
+  <h1><em>AI 大玩家</em>不做 AI，<br>玩 AI。</h1>
+
+  <p class="lede">这行三个月一次改朝换代，<strong>我每次都在第一批。</strong></p>
+
+  <svg class="mountain" viewBox="0 0 760 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="层叠的山峰，一个人站在近处的峰顶上，望向更远更高的山">
+    <defs>
+      <linearGradient id="far" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="var(--era1)" stop-opacity=".38"/>
+        <stop offset="100%" stop-color="var(--era1)" stop-opacity=".06"/>
+      </linearGradient>
+      <linearGradient id="mid" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="var(--era2)" stop-opacity=".55"/>
+        <stop offset="100%" stop-color="var(--era2)" stop-opacity=".10"/>
+      </linearGradient>
+      <linearGradient id="near" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="var(--era3)" stop-opacity=".90"/>
+        <stop offset="100%" stop-color="var(--era3)" stop-opacity=".28"/>
+      </linearGradient>
+    </defs>
+    <!-- furthest, highest -->
+    <path d="M400 240 L556 44 L604 104 L648 62 L760 240 Z" fill="url(#far)"/>
+    <!-- middle -->
+    <path d="M232 240 L392 78 L446 140 L512 96 L640 240 Z" fill="url(#mid)"/>
+    <!-- nearest, the one already climbed -->
+    <path d="M0 240 L150 96 L214 168 L268 128 L392 240 Z" fill="url(#near)"/>
+    <!-- the climber, on the near summit, facing the far peaks -->
+    <circle cx="150" cy="82" r="4.4" fill="var(--text-primary)"/>
+    <path d="M150 87 L150 100 M150 91 L143 96 M150 91 L157 95 M150 100 L145 110 M150 100 L156 110"
+          stroke="var(--text-primary)" stroke-width="2.1" stroke-linecap="round"/>
+    <!-- sight line toward the next, higher summit -->
+    <path d="M162 84 L548 46" stroke="var(--accent)" stroke-width="1.4" stroke-dasharray="3 6" opacity=".75"/>
+    <circle cx="556" cy="44" r="3.4" fill="var(--accent)"/>
+  </svg>
+
+  <blockquote>我是登山者。登山之前，兴致勃勃；登上峰顶之后，兴致缺缺。<br>
+  我来到，我看见，我征服——掌握一个难关之后，我不留恋，直接前往下一座还没登顶的、更高的山。</blockquote>
+</section>
+
+<!-- ══ 旗舰 A ════════════════════════════════ -->
+<section>
+  <div class="kicker">现在时 · 我现在的水平</div>
+  <h2>不是「我做过什么」，<br>是「我现在能做到什么」。</h2>
+  <p>在一个能力半衰期只有三个月的行业里，履历是负债，作品是资产。所以这一页只放一件当季的东西。</p>
+
+  <div class="card">
+    <svg class="cover" viewBox="0 0 760 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hekaya 封面：一句话展开成一部短剧的分镜序列">
+      <defs>
+        <linearGradient id="hk" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="var(--era2)" stop-opacity=".22"/>
+          <stop offset="100%" stop-color="var(--era1)" stop-opacity=".06"/>
+        </linearGradient>
+      </defs>
+      <rect width="760" height="300" fill="url(#hk)"/>
+      <!-- one sentence -->
+      <rect x="56" y="140" width="96" height="7" rx="3.5" fill="var(--text-primary)" opacity=".82"/>
+      <rect x="56" y="156" width="58" height="7" rx="3.5" fill="var(--text-primary)" opacity=".34"/>
+      <!-- the arrow: one sentence → a drama -->
+      <path d="M172 150 L214 150" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M207 144 L214 150 L207 156" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <!-- storyboard frames, unfolding -->
+      <rect x="236" y="104" width="82" height="92" rx="7" fill="var(--surface-1)" stroke="var(--era2)" stroke-width="1.5" opacity=".95"/>
+      <rect x="330" y="104" width="82" height="92" rx="7" fill="var(--surface-1)" stroke="var(--era2)" stroke-width="1.5" opacity=".78"/>
+      <rect x="424" y="104" width="82" height="92" rx="7" fill="var(--surface-1)" stroke="var(--era2)" stroke-width="1.5" opacity=".58"/>
+      <rect x="518" y="104" width="82" height="92" rx="7" fill="var(--surface-1)" stroke="var(--era2)" stroke-width="1.5" opacity=".40"/>
+      <rect x="612" y="104" width="82" height="92" rx="7" fill="var(--surface-1)" stroke="var(--era2)" stroke-width="1.5" opacity=".24"/>
+      <!-- play glyph in first frame -->
+      <path d="M268 138 L288 150 L268 162 Z" fill="var(--accent)"/>
+      <!-- horizon lines in later frames -->
+      <path d="M348 168 h46 M442 168 h46 M536 168 h46" stroke="var(--era2)" stroke-width="1.4" opacity=".50" stroke-linecap="round"/>
+      <circle cx="360" cy="136" r="8" fill="var(--era2)" opacity=".45"/>
+      <circle cx="454" cy="136" r="8" fill="var(--era2)" opacity=".32"/>
+      <text x="56" y="72" font-family="-apple-system,Segoe UI,sans-serif" font-size="15" letter-spacing="3" fill="var(--text-muted)">حكاية</text>
+      <text x="56" y="104" font-family="-apple-system,Segoe UI,sans-serif" font-size="34" font-weight="700" fill="var(--text-primary)">Hekaya</text>
+    </svg>
+    <div class="card-body">
+      <div class="tagrow">
+        <span class="tag live">2026.07 · 当季在架</span>
+        <span class="tag">AI 短剧平台</span>
+        <span class="tag">中东 · 北非 · 拉美</span>
+      </div>
+      <h3>从一句话，到一部短剧</h3>
+      <p>面向中东、北非、拉美蓝海市场的 AI 短剧平台。对标 LivTV。</p>
+      <div class="credit">
+        <b>署名：导演。</b> Hekaya 是我指挥 Fable 5 做的。我的活儿是知道这个活该派谁去，
+        以及看一眼就知道它做得好不好。Fable 5 的审美让我击节称赞——<b>能认出这一点，是我这十年唯一还值钱的东西。</b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 审美转轴 ══════════════════════════════ -->
+<section>
+  <div class="kicker">我凭什么</div>
+  <h2>在人人都能生产的时代，<br>评审权比生产权贵。</h2>
+
+  <p class="big">十年写代码，五年做攻防。<br>这些技能今天都不值钱了，AI 全会。</p>
+
+  <p style="margin-top:26px">它们剩下的唯一用处是：<strong>AI 吐出来的东西，我一眼看得出是好是坏。</strong></p>
+
+  <p>我不是一个看不懂输出的 vibe coder——我是一个读了十年别人代码的人。在满屏 AI 生成的东西里，我能分辨哪些是真能用的。这个能力现在比会写代码贵，而且 AI 产出越多，它越贵。</p>
+
+  <p>这件事有个更短的名字：<strong>审美</strong>。它是目前唯一还没被 AI 拉平的东西。</p>
+</section>
+
+<!-- ══ 旗舰 B ════════════════════════════════ -->
+<section>
+  <div class="kicker">不可压缩 · 完成时</div>
+  <h2>AI 能在一个下午<br>复制我的任何一项技能，<br>但复制不了这八年。</h2>
+  <p>2018 年，我建了一个仓库，把自己的人生做成一个游戏。八年过去，它长成了《知元纪》。<br>
+  中间没有断过——这是我全部东西里，唯一一个新手加 AI 今天下午做不出来的。因为它的成本不是技能，是八年。</p>
+
+  <div class="tl">
+    <div class="node"><i style="background:var(--era1)"></i>
+      <div class="yr">2018</div><div class="nm">YCW-s_Auto_Life_Game</div>
+      <div class="ds">把人生的抉择全部汇聚为一个主干的游戏。三观全部炼为一炉。若人在，则游戏在——人的更新，就对应着版本的更新。</div></div>
+    <div class="node"><i style="background:var(--era1)"></i>
+      <div class="yr">2018</div><div class="nm">YCW-s_Life_Before_2018.04.02</div>
+      <div class="ds">记录一些快速成长的三观。</div></div>
+    <div class="node"><i style="background:var(--era2)"></i>
+      <div class="yr">2020</div><div class="nm">MyStepByStepLife</div>
+      <div class="ds">一步又一步，似蜗牛，似蜗牛。</div></div>
+    <div class="node"><i style="background:var(--era2)"></i>
+      <div class="yr">2020</div><div class="nm">The_Game_Of_Life</div>
+      <div class="ds">关于生命的游戏。</div></div>
+    <div class="node"><i style="background:var(--era2)"></i>
+      <div class="yr">2020</div><div class="nm">Life-Thought-Experience__memorial</div>
+      <div class="ds">人生、思想、经历，备忘录。</div></div>
+    <div class="node"><i style="background:var(--era3)"></i>
+      <div class="yr">2026</div><div class="nm">life-task-system</div>
+      <div class="ds">人生任务系统。</div></div>
+    <div class="node"><i style="background:var(--era3)"></i>
+      <div class="yr">2026</div><div class="nm">dao-logos-site</div>
+      <div class="ds">循环道统。</div></div>
+    <div class="node"><i style="background:var(--era3)"></i>
+      <div class="yr">2026</div><div class="nm">all-human-company-site</div>
+      <div class="ds">全人公司。</div></div>
+    <div class="node"><i style="background:var(--era3)"></i>
+      <div class="yr">2026</div><div class="nm">2A-META 《知元纪》</div>
+      <div class="ds">AI-First 时代的开放知识文明系统。面向 AI 完全开放的个人知识基础设施：连接信息、目标、Agent、预测、协同、迭代与长期记忆。</div></div>
+  </div>
+
+  <div class="note">八年，九个仓库，同一个执念。旁边还堆着 179 个我自己的仓库，从 2017 年到现在没断过——但数量在这个时代不稀缺，<b>时间才稀缺</b>。</div>
+</section>
+
+<!-- ══ 战史 ══════════════════════════════════ -->
+<section>
+  <div class="kicker">已归档 · 战史</div>
+  <h2>下面这些都过期了。<br>我知道，所以我标了日期。</h2>
+  <p>一件事的价值不锁定在你做成它的那天，锁定在<strong>它变得人人可做的那天</strong>。下面每一条在当时都是稀缺的，今天都不是了。它们放在这里是记录，不是能力条——就像 1970 年的世界纪录，是历史，不是今天的百米成绩。</p>
+
+  <div class="arc">
+    <div class="rec"><div class="when">2025.12</div><div class="what">Codex 还被严重低估的时候，<b>用一周从零做完一整套 SaaS</b>。那个时间点，全球做到的人我排第二。<span style="color:var(--text-muted)">（2026.03 起，此项归零）</span></div></div>
+    <div class="rec"><div class="when">2025.03</div><div class="what"><b>6 小时</b>完成 2000 道题、400 页的 OCR 提取、格式标准化、结果复校验与防泄密封装。<span style="color:var(--text-muted)">（2025.09 起，此项归零）</span></div></div>
+    <div class="rec"><div class="when">2026.03</div><div class="what">逆向研究 macOS 版 Codex.app 的 fast 模式入口，做成开源工具包。<span style="color:var(--text-muted)">（2026.08 起，此项归零）</span></div></div>
+    <div class="rec"><div class="when">2021–2025</div><div class="what"><b>15 场</b>国家级 / 省市级护网重保与攻防演练，<b>至今未丢一分</b>；其中一次在裁判组。</div></div>
+    <div class="rec"><div class="when">2022–2024</div><div class="what">11 个甲方代码审计项目（某股份制银行、某央企数科总部、某省级农信、某头部手机厂商等）。</div></div>
+    <div class="rec"><div class="when">2023</div><div class="what">给 <b>GitHub 官方 CodeQL 规则库</b>提交过规则集；挖出 <b>RuoYi 0day</b>。</div></div>
+    <div class="rec"><div class="when">2023 / 2025</div><div class="what">上海期货交易所核心交易系统测试——二进制与通讯协议，国内无先例。</div></div>
+    <div class="rec"><div class="when">2024.10</div><div class="what">某银行鸿蒙 APP 安全审计，ArkTS + Native C++ 双侧，<b>6 高危 5 中危</b>。</div></div>
+    <div class="rec"><div class="when">2021</div><div class="what">vmd、美洽的 Electron 本地代码执行漏洞。</div></div>
+  </div>
+
+  <div class="note"><b>为什么要标归零日期？</b> 因为这行三个月改一次朝。能报出每一项资产的折旧时刻，本身就是我还在场上的证明——不敢标日期的人，才是真的过期了。</div>
+</section>
+
+<!-- ══ 保鲜机制 ══════════════════════════════ -->
+<section>
+  <div class="kicker">保鲜机制</div>
+  <h2>这一页每三个月<br>重写一次。</h2>
+  <p>因为在这个行业里，一份静态的自我介绍从写完那天就开始腐烂。所以这不是一份简历，是一个<strong>按季度重跑的流程</strong>。</p>
+
+  <ol class="rules">
+    <li>每一件作品和成就都过一遍，只问一个问题：<strong>一个新手加当月最强的 AI，一个下午能不能做出来？</strong>能——划掉，或降级成带日期的战史。</li>
+    <li>检查当季旗舰是否还打得过同期作品。打不过就换掉。<strong>旗舰位永远只放当季作品。</strong></li>
+    <li>更新前置位声明：「那个我三个月前就不用了」——里面的「那个」和「现在在玩的」，两个词都要换。</li>
+    <li>八年那条线不用改。它是设计成不折旧的。</li>
+  </ol>
+
+  <div class="note" style="margin-top:32px">下一次重写：<b>2026 年 11 月</b>。如果你看到这一页过了期还没更新，那说明我掉队了——这个判断我授权你替我做。</div>
+</section>
+
+<!-- ══ 联系 ══════════════════════════════════ -->
+<section>
+  <div class="kicker">联系</div>
+  <h2>别问我会什么。</h2>
+  <p class="big" style="margin-bottom:8px">那个答案三个月就过期。<br>问我上个月在玩什么，<br>和下个月准备扔掉什么。</p>
+
+  <div class="links">
+    <a href="mailto:yanchongwen101@163.com"><span>Email</span>yanchongwen101@163.com</a>
+    <a href="https://github.com/hanshou101" rel="me noopener"><span>GitHub</span>@hanshou101</a>
+  </div>
+</section>
+
+<footer>
+  <p>严崇文 · 小严同学 —— 古法全栈开发 · 古法全栈安全 · 维新派 AI 小学生 · 量化小学生</p>
+  <p>（其实句句属实，甚至还过于谦虚。）</p>
+  <p style="margin-top:18px">本页有效期至 2026 年 11 月 · 过期即失效，请以最新版本为准</p>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  var r=document.documentElement, k='ycw-theme', s=null;
+  try{s=localStorage.getItem(k)}catch(e){}
+  if(s){r.setAttribute('data-theme',s)}
+  else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches){r.setAttribute('data-theme','light')}
+  document.getElementById('tg').addEventListener('click',function(){
+    var n=r.getAttribute('data-theme')==='light'?'dark':'light';
+    r.setAttribute('data-theme',n);
+    try{localStorage.setItem(k,n)}catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
