@@ -1,6 +1,19 @@
 // 全部数值均来自可核对的仓库元数据（git log / GitHub API），不做估算。
 
-/** demo-ant-design-pro 的逐年提交数。2026 为部分年度（截至 2026-07-21）。 */
+export const EXPIRY = "2026.11";
+
+export const SECTIONS = [
+  { id: "hekaya", label: "当季作品" },
+  { id: "craft", label: "古法时代" },
+  { id: "spine", label: "日课" },
+  { id: "cockpit", label: "知元纪" },
+  { id: "lineage", label: "八年" },
+  { id: "archive", label: "战史" },
+  { id: "refresh", label: "保鲜" },
+  { id: "contact", label: "联系" },
+];
+
+/** demo-ant-design-pro 的逐年提交数。2020 与 2026 为部分年度。 */
 export const commitsByYear = [
   { year: "2020", n: 10, partial: true, note: "12 月建仓" },
   { year: "2021", n: 460, partial: false },
@@ -15,6 +28,7 @@ export const dailyDriver = {
   repo: "demo-ant-design-pro",
   commits: 2764,
   activeDays: 992,
+  spanDays: 2047,
   from: "2020-12-17",
   to: "2026-07-21",
   tools: 97,
@@ -47,7 +61,7 @@ export const specialSkills = [
   "xss-common-vuln", "career-path-plan",
 ];
 
-/** 2A-META《知元纪》的驾驶舱运行区 —— 一个真在跑的人生操作系统 */
+/** 驾驶舱运行区 —— 2A-META 根目录下真在跑的模块 */
 export const cockpit = [
   { name: "目标树", desc: "长期目标的分解与追踪" },
   { name: "积分账本", desc: "行为的计价与结算" },
@@ -58,20 +72,53 @@ export const cockpit = [
   { name: "资讯收件箱", desc: "外部信息的统一入口" },
 ];
 
-/** 明线：把自己的人生反复写成仓库 */
-export const lifeRepos = [
-  { year: "2018", name: "YCW-s_Auto_Life_Game", desc: "把人生的抉择全部汇聚为一个主干的游戏。三观全部炼为一炉。若人在，则游戏在——人的更新，就对应着版本的更新。", era: 1 },
-  { year: "2018", name: "YCW-s_Life_Before_2018.04.02", desc: "记录一些快速成长的三观。", era: 1 },
-  { year: "2020", name: "MyStepByStepLife", desc: "一步又一步，似蜗牛，似蜗牛。", era: 2 },
-  { year: "2020", name: "The_Game_Of_Life", desc: "关于生命的游戏。", era: 2 },
-  { year: "2020", name: "Life-Thought-Experience__memorial", desc: "人生、思想、经历，备忘录。", era: 2 },
-  { year: "2026", name: "life-task-system", desc: "人生任务系统。", era: 3 },
-  { year: "2026", name: "dao-logos-site", desc: "循环道统。", era: 3 },
-  { year: "2026", name: "all-human-company-site", desc: "全人公司。", era: 3 },
-  { year: "2026", name: "2A-META《知元纪》", desc: "AI-First 时代的开放知识文明系统。它不是一个文档库——驾驶舱运行区在跑，Obsidian 的人生驾驶舱插件是它的子模块。", era: 3, flag: true },
+export const plugin = [
+  { k: "manifest.json", v: "标准 Obsidian 插件清单" },
+  { k: "esbuild.config.mjs", v: "自建构建链" },
+  { k: "src/core", v: "核心逻辑层" },
+  { k: "src/channels", v: "数据通道层" },
+  { k: "src/ui", v: "界面层" },
+  { k: "test/", v: "测试" },
+  { k: "versions.json", v: "版本管理" },
 ];
 
-/** 战史：每条都锁定日期与当时的稀缺性 */
+/**
+ * 一条线，两股绳：
+ * kind=repo  —— 明线，把人生反复写成仓库
+ * kind=daily —— 暗线，demo-ant-design-pro 的逐年演进，填住 2020→2026 之间的空白
+ */
+export const lineage = [
+  { year: "2018", kind: "repo", era: 1, name: "YCW-s_Auto_Life_Game",
+    desc: "把人生的抉择全部汇聚为一个主干的游戏。三观全部炼为一炉。若人在，则游戏在——人的更新，就对应着版本的更新。" },
+  { year: "2018", kind: "repo", era: 1, name: "YCW-s_Life_Before_2018.04.02",
+    desc: "记录一些快速成长的三观。" },
+  { year: "2020", kind: "repo", era: 2, name: "MyStepByStepLife",
+    desc: "一步又一步，似蜗牛，似蜗牛。" },
+  { year: "2020", kind: "repo", era: 2, name: "The_Game_Of_Life",
+    desc: "关于生命的游戏。" },
+  { year: "2020", kind: "repo", era: 2, name: "Life-Thought-Experience__memorial",
+    desc: "人生、思想、经历，备忘录。" },
+  { year: "2020.12", kind: "daily", era: 2, name: "demo-ant-design-pro 建仓", n: 10,
+    desc: "此后五年半，这个仓库几乎每隔一天就有一次提交。下面这段，就是它填满的。" },
+  { year: "2021", kind: "daily", era: 2, name: "工具与知识的第一次归拢", n: 460,
+    desc: "流量分析菜单、疑难杂症检索、把多日的成果做整理——甚至塞进了唯物辩证法的条目。工具和知识还没分家。" },
+  { year: "2022", kind: "daily", era: 2, name: "代码审计工具链成型", n: 841,
+    desc: "正则排除树、Java 正则关键字库、可泛化的函数抽取。全期提交量的峰值年。" },
+  { year: "2023", kind: "daily", era: 2, name: "接进 AI", n: 592,
+    desc: "关键信息爬取与总结、一组 AI 连续自动化工具。审计工具链第一次和大模型接上。" },
+  { year: "2024", kind: "daily", era: 3, name: "AI 平台化", n: 555,
+    desc: "接入新的 AI 平台、做「AI 管理」、把时间轴做出来。从「用 AI」变成「管 AI」。" },
+  { year: "2025", kind: "daily", era: 3, name: "转向表达与可视化", n: 277,
+    desc: "UI 重做、分形三角形、左侧 Markdown 与右侧图形联动、思维导图长标题换行。开始在意好不好看。" },
+  { year: "2026", kind: "daily", era: 3, name: "与驾驶舱、量化打通", n: 29,
+    desc: "每天任务抽取到 Obsidian 模板、量化体系、CheckList 体系。工具箱终于接进了人生操作系统。" },
+  { year: "2026", kind: "repo", era: 3, name: "life-task-system", desc: "人生任务系统。" },
+  { year: "2026", kind: "repo", era: 3, name: "dao-logos-site", desc: "循环道统。" },
+  { year: "2026", kind: "repo", era: 3, name: "all-human-company-site", desc: "全人公司。" },
+  { year: "2026", kind: "repo", era: 3, name: "2A-META《知元纪》", flag: true,
+    desc: "八年执念的收口：一套面向 AI 完全开放的知识文明系统，也是上面那一整条线唯一的终点。" },
+];
+
 export const archive = [
   { when: "2025.12", what: "Codex 还被严重低估的时候，**用一周从零做完一整套 SaaS**。那个时间点，全球做到的人我排第二。", dead: "2026.03 起归零" },
   { when: "2025.03", what: "**6 小时**完成 2000 道题、400 页的 OCR 提取、格式标准化、结果复校验与防泄密封装。", dead: "2025.09 起归零" },
@@ -84,12 +131,14 @@ export const archive = [
   { when: "2021", what: "vmd、美洽的 Electron 本地代码执行漏洞。" },
 ];
 
-export const shots = [
-  { src: "shots/hk1-home.jpg", label: "首页 · 从一句话，到一部短剧" },
-  { src: "shots/hk5-studio-canvas.jpg", label: "画布工作流 · 剧本到成片的节点编排" },
-  { src: "shots/hk6-studio-director.jpg", label: "3D 导演台" },
-  { src: "shots/hk7-studio-dubbing.jpg", label: "配音间" },
-  { src: "shots/hk4-studio.jpg", label: "创作工作台" },
+/** HekayaTV 的八条路由，每条都可直接点开 */
+export const hekayaRoutes = [
+  { path: "", label: "首页", desc: "从一句话，到一部短剧", shot: "shots/home.jpg" },
+  { path: "studio/canvas", label: "画布工作流", desc: "剧本到成片的节点编排", shot: "shots/studio-canvas.jpg" },
+  { path: "studio/director", label: "3D 导演台", desc: "镜位与走位", shot: "shots/studio-director.jpg" },
+  { path: "studio/cast", label: "主体库", desc: "角色一致性管理", shot: "shots/studio-cast.jpg" },
+  { path: "studio/dubbing", label: "配音间", desc: "方言配音与字幕", shot: "shots/studio-dubbing.jpg" },
+  { path: "studio", label: "创作工作台", desc: "项目总览", shot: "shots/studio.jpg" },
+  { path: "app", label: "观众端 App", desc: "消费侧体验", shot: "shots/app.jpg" },
+  { path: "console", label: "运营驾驶舱", desc: "产能与投放", shot: "shots/console.jpg" },
 ];
-
-export const EXPIRY = "2026.11";
